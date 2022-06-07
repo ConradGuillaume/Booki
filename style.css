@@ -1,0 +1,932 @@
+.box {
+  -webkit-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-Medium.ttf);
+}
+
+body {
+  font-family: "Raleway";
+}
+#en-tete {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+}
+#booki {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  position: relative;
+  margin: 20% 0% 0% 40%;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 90%;
+  margin: 3% 20% 0% 0%;
+}
+#topbleu {
+  list-style-type: none;
+  border-top: 3px solid #f2f2f2;
+  width: 130px;
+  height: 125px;
+  margin-right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#heberger:hover {
+  color: #0065fc;
+}
+#act:hover {
+  color: #0065fc;
+}
+#topbleu:hover {
+  border-top: 2px solid #0065fc;
+}
+#topgris:hover {
+  border-top: 2px solid #0065fc;
+}
+#topgris {
+  list-style-type: none;
+  border-top: 3px solid #f2f2f2;
+  color: black;
+  width: 130px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#titrehaut {
+  font-size: 24px;
+  font-weight: bold;
+}
+#ville-nature {
+  margin-top: 0%;
+}
+#barrerecherche {
+  display: flex;
+  flex-direction: column;
+  line-height: 0px;
+  font-size: 16px;
+  margin-left: 4%;
+}
+#loupe {
+  display: none;
+}
+#Location {
+  border: 0.5px solid #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #f2f2f2;
+  color: black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search {
+  margin-top: 2%;
+  display: flex;
+}
+#bouton {
+  border: 0.5px solid #f2f2f2;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0065fc;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 10%;
+  height: 50px;
+  cursor: pointer;
+}
+
+#recherche {
+  border: 0.5px solid #f2f2f2;
+  width: 180px;
+  height: 46px;
+  resize: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+#recherche::placeholder {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+#rechercheavance {
+  margin-top: 1%;
+  margin-left: 4%;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.filtre {
+  border: 2px solid rgb(173, 166, 166);
+  border-radius: 200px 200px 200px 200px;
+  width: auto;
+  height: 50px;
+  margin: 1%;
+  display: flex;
+}
+input[type="button"] {
+  background-color: rgb(255, 255, 255);
+  padding: 1px 20px 1px 20px;
+  font-size: 19px;
+  font-weight: 900;
+  border: none;
+  border-radius: 200px 200px 200px 200px;
+  cursor: pointer;
+}
+.selecteur:hover {
+  box-shadow: 0px 0px 100px 0px #00ff62 inset;
+}
+.favori {
+  border: 0px solid #deebff;
+  border-radius: 200px 200px 200px 200px;
+  background-color: #deebff;
+  width: 54px;
+  height: 54px;
+  margin-left: -2%;
+  margin-top: -1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.bulle {
+  color: #0065fc;
+}
+
+#i {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 4%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+#pointinfo {
+  color: blue;
+  border: 2px solid #f2f2f2;
+  border-radius: 200px 200px 200px 200px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logement {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+/****************** HEBERGEMENT ACTIVITE *****************/
+#hebergement-populaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 550px;
+  margin: 2% 4% 0% 4%;
+}
+.gras {
+  font-weight: 900;
+}
+#titre1 {
+  width: 100%;
+  height: 11%;
+  font-size: 23px;
+  font-weight: 900;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: 6%;
+  display: flex;
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#hebergement {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 625px;
+  width: 68%;
+  border-radius: 15px 15px;
+}
+.card1 {
+  height: 120px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card {
+  border: 4px solid white;
+  border-radius: 10px 10px;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px #787878;
+  margin: -3% 2% 6% 2%;
+  width: 25.7%;
+  height: 30%;
+}
+.card:hover {
+  background-color: #78adfc;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+.fa-star {
+  height: 15px;
+  font-size: 10px;
+  color: #0065fc;
+}
+.etoile_1 .fa-star:nth-child(5) {
+  color: #deebff;
+}
+.etoile_3 .fa-star:nth-child(5) {
+  color: #deebff;
+}
+.etoile_4 .fa-star:nth-child(4) {
+  color: #deebff;
+}
+.etoile_4 .fa-star:nth-child(5) {
+  color: #deebff;
+}
+.etoile_5 .fa-star:nth-child(5) {
+  color: #deebff;
+}
+.etoile2 .fa-star:nth-child(5) {
+  color: #deebff;
+}
+/***** LES PLUS POPULAIRES ****/
+#popularity {
+  border-radius: 10px 10px;
+  width: 30%;
+  height: 625px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+#afficher {
+  position: relative;
+  width: 100%;
+  bottom: 2%;
+}
+#plus {
+  margin-left: 6%;
+  font-weight: 900;
+  font-size: 22px;
+}
+a,
+:visited {
+  color: black;
+}
+#titre-logo {
+  width: 100%;
+  height: 5%;
+  font-size: 23px;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#flechemonte {
+  width: 22px;
+  height: 22px;
+  display: flex;
+}
+.card3 {
+  border: 4px solid white;
+  border-radius: 10px 10px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  height: 24%;
+  width: 80%;
+  background-color: white;
+  display: flex;
+  margin-bottom: 3%;
+}
+.card3:hover {
+  background-color: #78adfc;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+.card2 {
+  height: 150px;
+  width: 140px;
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+
+.etoile1 {
+  font-size: 10px;
+  position: absolute;
+  top: 88%;
+}
+.etoile2 {
+  font-size: 10px;
+  position: absolute;
+  top: 88%;
+}
+.textuel {
+  position: relative;
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 5%;
+  line-height: 22px;
+}
+/***ACTIVITE***/
+h2 {
+  height: 30px;
+  margin: 0%;
+  position: absolute;
+}
+
+#occupation1 {
+  width: 100%;
+  height: 350px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+#occupation2 {
+  width: 100%;
+  height: 157px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+#occupation3 {
+  width: 100%;
+  height: 98px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+#occupation4 {
+  width: 100%;
+  height: 350px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+#occupation5 {
+  width: 100%;
+  height: 130px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+#occupation6 {
+  width: 100%;
+  height: 136px;
+  border-radius: 30px 30px 0px 0px;
+  object-fit: cover;
+}
+figcaption {
+  margin-top: 3%;
+  margin-left: 8%;
+  font-size: 18px;
+  cursor: pointer;
+}
+#activite {
+  height: 500px;
+  margin: 10% 4% 0% 4%;
+  position: relative;
+}
+#portuaire {
+  width: 22%;
+  height: 400px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  position: absolute;
+  margin: 0%;
+  top: 10%;
+  left: 0%;
+}
+#pomegues {
+  width: 22%;
+  height: 210px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  position: absolute;
+  margin: 0%;
+  top: 10%;
+  left: 26%;
+}
+#frioul {
+  width: 22%;
+  height: 140px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  position: absolute;
+  margin: 0%;
+  bottom: 10%;
+  left: 26%;
+}
+#calanques {
+  width: 22%;
+  height: 400px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  position: absolute;
+  margin: 0%;
+  top: 10%;
+  left: 52%;
+}
+#garde {
+  width: 22%;
+  height: 180px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  position: absolute;
+  margin: 0%;
+  right: 0%;
+  top: 10%;
+}
+#longchamp {
+  width: 22%;
+  height: 188px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0px 0px 8px 0px #787878;
+  position: absolute;
+  margin: 0%;
+  right: 0%;
+  bottom: 10%;
+}
+
+/****FOOTER****/
+footer {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-evenly;
+  height: 220px;
+  font-size: 19px;
+  margin: 0% 0% 0% 0%;
+  padding-top: 2%;
+}
+.pied {
+  font-weight: 900;
+  padding-inline-start: 0;
+  list-style-type: none;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+  font-weight: 100;
+}
+#propos,
+#hotel,
+#assistance {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0%;
+  margin-right: 15%;
+}
+/*************************************TABLETTE**********************************************/
+@media screen and (max-width: 992px) {
+  #en-tete {
+    display: block;
+  }
+
+  header {
+    width: 100%;
+  }
+  #booki {
+    margin: 0% 58% 0% 42%;
+    width: 200px;
+  }
+  .menu {
+    width: 100%;
+    padding-inline-start: 0;
+    margin-right: 0%;
+    font-size: 24px;
+  }
+  #topgris,
+  #topbleu {
+    height: 100%;
+    width: 100%;
+    border-top: none;
+  }
+  #topbleu:hover {
+    border-bottom: 5px solid #0065fc;
+    padding-bottom: 2%;
+    border-top: none;
+  }
+  #topgris:hover {
+    border-bottom: 5px solid #0065fc;
+    padding-bottom: 2%;
+    border-top: none;
+  }
+  #loupe {
+    display: none;
+  }
+  #titrehaut {
+    line-height: 20px;
+  }
+  #barrerecherche {
+    margin: 10% 0% 0% 0%;
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+  }
+  #search {
+    justify-content: center;
+  }
+  #rechercheavance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #hoho {
+    justify-content: center;
+  }
+  #hebergement-populaire {
+    display: flex;
+  }
+  #hebergement {
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  #titre1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+  }
+  #cannebiere,
+  #port,
+  #mouettes,
+  #mer,
+  #panier,
+  #amina {
+    height: 30%;
+    margin: 0% 3% 0% 3%;
+  }
+  #afficher {
+    position: relative;
+    bottom: 0%;
+  }
+  #popularity {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 730px;
+  }
+  #matin,
+  #eau,
+  #blanc {
+    width: 60%;
+    height: 22%;
+    margin: 0% 0% 0% 0%;
+  }
+  #titre-logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0%;
+    margin-bottom: 1%;
+  }
+  #flechemonte {
+    margin-left: 5%;
+  }
+  .card3 {
+    margin-bottom: 5%;
+    margin-top: 0.5%;
+  }
+  .card2 {
+    height: 100%;
+    width: 240px;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+  }
+  .etoile3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .etoile2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .etoile1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .textuel {
+    text-align: center;
+  }
+  #activite {
+    top: 710px;
+    height: 500px;
+    position: relative;
+    display: flex;
+  }
+  figcaption {
+    font-size: 15px;
+    margin: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    position: relative;
+    top: 700px;
+  }
+}
+/*********************************SMARTHPHONE*********************************************/
+@media screen and (max-width: 768px) {
+  #en-tete {
+    display: block;
+  }
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  #booki {
+    margin: 0% 55% 0% 45%;
+    width: 100px;
+  }
+  .menu {
+    width: 100%;
+    padding-inline-start: 0;
+    margin-right: 0%;
+    font-size: 20px;
+  }
+  #topgris,
+  #topbleu {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+  #topbleu:hover {
+    border-bottom: 3px solid #0065fc;
+    padding-bottom: 3%;
+  }
+  #topgris:hover {
+    border-bottom: 3px solid #0065fc;
+    padding-bottom: 3%;
+  }
+  #topbleu {
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+  #topgris {
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+    margin: 0%;
+  }
+  #bouton {
+    display: none;
+  }
+  #loupe {
+    border: 2px solid #0065fc;
+    border-radius: 15px 15px 15px 15px;
+    width: 7%;
+    color: #f2f2f2;
+    background: #0065fc;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #titrehaut {
+    width: 100%;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  #barrerecherche {
+    margin: 0% 0% 0% 5%;
+    width: 100%;
+    text-align: start;
+    line-height: 0px;
+  }
+  #search {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: flex-start;
+  }
+  #loupe {
+    border: 2px solid #0065fc;
+    border-radius: 15px 15px 15px 15px;
+    width: 14%;
+    height: 48px;
+  }
+  #recherche {
+    border: 0.5px solid #f2f2f2;
+    width: 220px;
+    height: 48px;
+    resize: none;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #rechercheavance {
+    margin-left: 4%;
+    margin-bottom: 10%;
+    display: flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .filtre {
+    border: 2px solid rgb(173, 166, 166);
+    border-radius: 200px 200px 200px 200px;
+    width: auto;
+    margin: 1%;
+  }
+  #i {
+    margin-bottom: 10%;
+  }
+  input[type="button"] {
+    padding: 7px;
+  }
+  h3 {
+    margin: 2%;
+    width: 100%;
+    display: flex;
+  }
+  #hebergement-populaire {
+    position: relative;
+    width: 100%;
+  }
+  #popularity {
+    margin-left: 0%;
+    border-radius: 0;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #hebergement-populaire {
+    margin: 0%;
+  }
+  #titre-logo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+  }
+  #matin,
+  #eau,
+  #blanc {
+    margin-top: -10%;
+    margin-bottom: -1%;
+    width: 85%;
+    height: 20%;
+  }
+  .card2 {
+    width: 120px;
+  }
+  .textuel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    line-height: 15px;
+    margin: 2% 2% 2% 4%;
+  }
+  .etoile1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .etoile2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0%;
+  }
+  .etoile3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0%;
+  }
+  #hebergement {
+    width: 100%;
+    position: absolute;
+    top: 710px;
+    display: block;
+    background-color: white;
+  }
+  #titre1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card {
+    border: 4px solid white;
+    border-radius: 10px 10px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    margin: 0% 0% 5% 4%;
+    width: 90%;
+    height: 30%;
+  }
+  #afficher {
+    position: relative;
+  }
+  #plus {
+    margin-left: 3%;
+  }
+  #activite {
+    position: relative;
+    top: 1600px;
+  }
+  h2 {
+    top: 2%;
+    margin-left: 3%;
+  }
+  footer {
+    padding-left: 10%;
+    width: 100%;
+    position: relative;
+    height: 450px;
+    top: 1650px;
+    display: flex;
+    flex-direction: column;
+  }
+  #activite {
+    width: 100%;
+    height: 1250px;
+    position: relative;
+    margin: 0%;
+  }
+  #occupation1,
+  #occupation2,
+  #occupation3,
+  #occupation4,
+  #occupation5,
+  #occupation6 {
+    width: 100%;
+    height: 130px;
+  }
+  #portuaire {
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    top: 6%;
+    left: 2.5%;
+    width: 95%;
+    height: 14%;
+  }
+  #pomegues {
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    top: 22%;
+    left: 2.5%;
+    width: 95%;
+    height: 14%;
+  }
+  #frioul {
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    left: 2.5%;
+    top: 38%;
+    width: 95%;
+    height: 14%;
+  }
+  #calanques {
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    top: 54%;
+    left: 2.5%;
+    width: 95%;
+    height: 14%;
+  }
+  #garde {
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    top: 70%;
+    left: 2.5%;
+    width: 95%;
+    height: 14%;
+  }
+  #longchamp {
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    top: 86%;
+    left: 2.5%;
+    width: 95%;
+    height: 14%;
+  }
+  figcaption {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
